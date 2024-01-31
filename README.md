@@ -21,7 +21,7 @@ Para controle de importação dos "Meus Pokemons" foi utilizado o login (JWT) pa
 
 - **C#**: A linguagem de programação principal usada para desenvolver a solução.
 - **Entity Framework**: Um ORM (Object-Relational Mapper) que permite interagir com o banco de dados usando objetos C#.
-- **.NET 8.0**: A plataforma de desenvolvimento usada para construir a aplicação.
+- **.NET 8.0**: O framework usado para desenvolver a aplicação.
 - **CQRS**: A arquitetura utilizada para separar as operações de leitura e gravação.- **CQRS**: A arquitetura utilizada para separar as operações de leitura e gravação.
 - **SQL Server**: Banco de dados relacional utilizado para armazenar os dados dos Pokemons e usuários.
 - **Redis**: Banco de dados em memória utilizado para demonstração de uso de cache.
