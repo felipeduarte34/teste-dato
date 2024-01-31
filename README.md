@@ -17,6 +17,8 @@ Para demonstração de filtros com SqlServer foi utilizando o conceito de Specif
 
 Para controle de importação dos "Meus Pokemons" foi utilizado o login (JWT) para identificar o usuario. A mesma logica quando ele busca os "Meus Pokemons"
 
+Também foi adaptado a nivel de demonstração, os testes que já existiam no repositorio tomado como referencia. 
+
 ## Tecnologias Envolvidas
 
 - **C#**: A linguagem de programação principal usada para desenvolver a solução.
