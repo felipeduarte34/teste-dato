@@ -1,7 +1,5 @@
 # Teste Backend
 
-
-
 ## Descrição da Solução
 
 Este projeto é uma solução de backend desenvolvida em C# e segue a arquitetura CQRS (Command Query Responsibility Segregation). E foi utilizado o seguinte repositorio como base: https://github.com/omid-ahmadpour/CleanArchitecture-Template/blob/main/README.md
@@ -24,13 +22,11 @@ Para controle de importação dos "Meus Pokemons" foi utilizado o login (JWT) pa
 - **C#**: A linguagem de programação principal usada para desenvolver a solução.
 - **Entity Framework**: Um ORM (Object-Relational Mapper) que permite interagir com o banco de dados usando objetos C#.
 - **.NET 8.0**: A plataforma de desenvolvimento usada para construir a aplicação.
-- **CQRS**: A arquitetura utilizada para separar as operações de leitura e gravação.
-
-## Banco de Dados
-
-SQL Server para Pokemons
-MongoDB para gerencias a importação de arquivos e para todos os filmes.
-Redis para demonstração de uso de cache
+- **CQRS**: A arquitetura utilizada para separar as operações de leitura e gravação.- **CQRS**: A arquitetura utilizada para separar as operações de leitura e gravação.
+- **SQL Server**: Banco de dados relacional utilizado para armazenar os dados dos Pokemons e usuários.
+- **Redis**: Banco de dados em memória utilizado para demonstração de uso de cache.
+- **Docker**: Utilizado para criar e gerenciar containers.
+- **Swagger**: Utilizado para documentar a API.
 
 ## Como Executar o Projeto
 
