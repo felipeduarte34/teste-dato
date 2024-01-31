@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.23.1" />
+    <PackageReference Include="NPOI" Version="2.6.2" />
+    <PackageReference Include="PolyCache" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\TesteBackend.Common.csproj" />
+    <ProjectReference Include="..\..\Core\Application\TesteBackend.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Domain\TesteBackend.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20210610091537_InitDb.cs" />
+    <Compile Remove="Migrations\20221002182020_refreshTokenColumns.cs" />
+    <Compile Remove="Migrations\20221002182348_RefreshTokenExpiryTimeNullable.cs" />
+    <Compile Remove="Migrations\20221002182348_RefreshTokenExpiryTimeNullable.Designer.cs" />
+    <Compile Remove="Migrations\20221009113306_RefreshTokenTableCreated.cs" />
+    <Compile Remove="Migrations\20221009113306_RefreshTokenTableCreated.Designer.cs" />
+    <Compile Remove="Migrations\20221016074041_removeRefreshTokenColumns.cs" />
+    <Compile Remove="Migrations\20221016074041_removeRefreshTokenColumns.Designer.cs" />
+    <Compile Remove="Migrations\AppDbContextModelSnapshot.cs" />
+    <Compile Remove="QueryHandlers\Specification.cs" />
+    <Compile Remove="CommandHandlers\Products\**" />
+    <Compile Remove="Configuration\Products\**" />
+    <Compile Remove="QueryHandlers\Products\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="CommandHandlers\Products\**" />
+    <EmbeddedResource Remove="Configuration\Products\**" />
+    <EmbeddedResource Remove="QueryHandlers\Products\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="CommandHandlers\Products\**" />
+    <None Remove="Configuration\Products\**" />
+    <None Remove="QueryHandlers\Products\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+</Project>

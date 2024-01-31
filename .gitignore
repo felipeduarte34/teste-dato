@@ -1,0 +1,97 @@
+# Arquivos do projeto
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos de compilação / Debug
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Arquivos de pacotes
+# O diretório de pacotes NuGet tem sido substituído pelo uso de pacotes de referência (desde .NET Core 3.0).
+# Para projetos mais antigos, descomente a linha abaixo:
+# packages/
+
+# Ignorar arquivos de configuração local
+#appsettings.*.json
+
+# Arquivos do ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Arquivos do TeamCity
+_TeamCity*
+
+# Pastas de compilação
+[Bb]in/
+[Oo]bj/
+
+# Arquivos de banco de dados
+*.mdf
+*.ldf
+
+# Logs do EF Core
+*.jfm
+
+# Test Results
+TestResults/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+*.swp
+*~.nib
+local.properties
+*.bak
+*.cache
+*.pidb
+*.suo
+*.sln.docstates
+*.user
+*.usr
+*.log
+*.pyc
+*.pyo
+*.rej
+*~
+
+# Arquivos de imagem
+#*.jpg
+#*.png
+#*.gif
+#*.bmp
+#*.ico
+#*.cur
+
+# Arquivos de fonte
+*.eot
+*.otf
+*.ttf
+*.woff
+
+# Arquivos de som
+*.wav
+*.mp3
+
+# Arquivos de vídeo
+*.mp4
+*.mov
+*.wmv
+
+# Arquivos diversos
+.DS_Store
+Thumbs.db

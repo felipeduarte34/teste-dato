@@ -1,0 +1,56 @@
+version: '3.9'
+services:
+  # Sql Server
+  sqlserver:
+    image: mcr.microsoft.com/azure-sql-edge
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: Teste@Backend
+    ports:
+      - "1433:1433"
+    networks:
+      - mynetwork
+
+  # Redis
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - mynetwork
+
+  # MongoDB
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - mynetwork
+
+  # Testebackend.API
+  testebackend:
+    depends_on:
+      - sqlserver
+      - redis
+      - mongodb
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: testebackend
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    networks:
+      - mynetwork    
+    environment:
+      - ConnectionStrings__SqlServer=User ID=sa;Password=Teste@Backend;Server=sqlserver;Initial Catalog=TesteBackendDb;Pooling=true;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;
+      - ConnectionStrings__Redis=redis:6379
+      - ConnectionStrings__MongoDB=mongodb://mongodb:27017
+      - Elasticsearch__Url=http://elasticsearch:9200
+      - ASPNETCORE_ENVIRONMENT=Development
+
+networks:
+  mynetwork:
