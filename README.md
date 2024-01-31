@@ -36,4 +36,5 @@ Também foi adaptado a nivel de demonstração, os testes que já existiam no re
 2. Foi criado um docker-compose para subir o projeto e suas respectivas dependencias (SqlServer, Redis e MongoDB)
 3. Caso queira rodar a aplicação sem utilizar docker, precisa ajustar os aqruivos de appsettings dentro do projeto da API
 4. docker-compose up 
+5. Acessar: http://localhost:5000/swagger/index.html
 
